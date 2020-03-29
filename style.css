@@ -242,12 +242,20 @@ h6{
     #left{
         /*change justify from center to start, less empty space*/
         justify-content:start;
-        /*small amount of margin at top using viewport height*/
-        margin-top:2vh;
+        /*small amount of margin at top using viewport height applied to leftside*/
+        margin-top:4vh;
     }
 
     #signin .logo {
-        /*shrink margin bottom from 8 to 2, less empty space*/
+        /*shrink margin bottom from 8 to 2 between logo and signin boxes, less empty space*/
         margin-bottom:2vh;
+    }
+
+    #signin .text-input {
+        margin-bottom:0.7rem;
+    }
+
+    #main-footer{
+        padding-top:1rem;
     }
 }
