@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    background:#181818;
+    color:white;
+    overflow:hidden; /*specifies what happens if content overflows an element's box. Specifies whether to clip content 
+    or to add scrollbars when element is too big. https://www.w3schools.com/cssref/pr_pos_overflow.asp 
+    */    
+}
+
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6{
+    font-weight: 300;
+}
+
+#wrapper{  /*apply to child elements of wrapper*/
+    display:flex; 
+    flex-direction:row;
+}
+
+#left{   /*left elements */
+    display:flex;
+    flex-direction: column;
+    flex:1;
+    align-items: center;
+    justify-content:center;
+    height:100vh;
+
+}
+
+#right{ /*right elements */
+    flex:1;
+}
+
+/* SIgn In */
+#signin {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    padding-bottom: 1rem;
+}
+
+#signin form{
+    width:80%;
+    padding-bottom:3rem;
+}
+
+#signin .logo{
+    margin-bottom: 8vh;
+}
+
+#signin .logo img{
+    width:300px;
+}
+
+#signin label {
+    font-size:0.9rem;
+    line-height:2rem; /*setting line height so the email/password boxes had more space*/
+    font-weight:500; /*making the email/username text thicker*/
+}
+
+#signin .text-input{
+    margin-bottom:1.3rem; /*space it from the bottom*/
+    width:100%; /*makes the label go all the way across*/
+}
